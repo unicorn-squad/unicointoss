@@ -1,12 +1,18 @@
 const test = QUnit.test;
 
-test('time to test a function', function(assert) {
+function getHornsOrButts(number) {
+    return 'heads';
+}
+
+test('heads result when < .5 test', function(assert) {
     //Arrange
-    // Set up your parameters and expectations
+    const expected = 'heads';
+    const number = .49;
+
 
     //Act 
-    // Call the function you're testing and set the result to a const
+    const result = getHornsOrButts(number);
 
     //Assert
-    assert.equal(true, false);
+    assert.equal(result, expected);
 });
