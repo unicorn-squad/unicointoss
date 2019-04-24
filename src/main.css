@@ -1,0 +1,12 @@
+body {
+    background-color: #f9ee92;
+    color: #fa9f32;
+    text-align: center;
+}
+
+button {
+    background-color: #a5e6f0;
+    height: 60px;
+    width: 200px;
+    font-size: 1.2em;
+}
