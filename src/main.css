@@ -8,5 +8,10 @@ button {
     background-color: #a5e6f0;
     height: 60px;
     width: 200px;
-    font-size: 1.2em;
+    font-size: 2em;
+    margin-top: 15%;
+}
+
+label {
+    font-size: 2em;
 }
