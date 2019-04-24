@@ -5,9 +5,12 @@ const unicoinButton = document.getElementById('unicoin-button');
 const uniImage = document.getElementById('uni-image');
 const message = document.getElementById('message');
 const headsChoice = document.getElementById('heads-choice');
+const winsDisplay = document.getElementById('wins');
+const lossesDisplay = document.getElementById('losses');
 
 //initialize stuff
-
+let wins = 0;
+let losses = 0;
 
 //add event listener for the button click, wiring UP!
 unicoinButton.addEventListener('click', () => {
@@ -32,11 +35,18 @@ unicoinButton.addEventListener('click', () => {
 
     if(guessedCorrect) {
         message.textContent = 'You won!';
-    }
-    else {
+    } else {
         message.textContent = 'You lose!';
     }
 
+//increment wins or losses up
+    if(guessedCorrect) {
+        wins++;
+        winsDisplay.textContent = 'Wins: ' + wins;
+    } else {
+        losses++;
+        lossesDisplay.textContent = 'Losses: ' + losses;
+    }
     
 });
 
