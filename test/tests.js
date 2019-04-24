@@ -1,10 +1,11 @@
+import getHornsOrButts from '../src/get-horns-or-butts.js';
 const test = QUnit.test;
 
 
 
 test('heads result when < .5 test', function(assert) {
     //Arrange
-    const expected = 'heads';
+    const expected = 'unihead';
     const number = .49;
 
 
@@ -18,7 +19,7 @@ test('heads result when < .5 test', function(assert) {
 test('returns tail for >= .5', function(assert) {
    
     //Arrange
-    const expected = 'tails';
+    const expected = 'unibutt';
     const number = .5;
 
     //Act

@@ -1,8 +1,8 @@
 function getHornsOrButts(number) {
     if(number < .5) {
-        return 'heads';
+        return 'unihead';
     }
-    return 'tails';
+    return 'unibutt';
 }
 
 export default getHornsOrButts;
