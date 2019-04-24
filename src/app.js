@@ -4,6 +4,7 @@ import getHornsOrButts from './get-horns-or-butts.js';
 const unicoinButton = document.getElementById('unicoin-button');
 const uniImage = document.getElementById('uni-image');
 //initialize stuff
+console.log(unicoinButton);
 
 //add event listener for the button click, wiring UP!
 unicoinButton.addEventListener('click', () => {
@@ -13,5 +14,7 @@ unicoinButton.addEventListener('click', () => {
 //change image display
     const imageSource = './assets/' + flip + '.jpg';
     uniImage.src = imageSource;
+
+    
 });
 
