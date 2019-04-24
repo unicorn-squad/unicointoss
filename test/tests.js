@@ -1,8 +1,6 @@
 const test = QUnit.test;
 
-function getHornsOrButts(number) {
-    return 'heads';
-}
+
 
 test('heads result when < .5 test', function(assert) {
     //Arrange
@@ -15,4 +13,18 @@ test('heads result when < .5 test', function(assert) {
 
     //Assert
     assert.equal(result, expected);
+});
+
+test('returns tail for >= .5', function(assert) {
+   
+    //Arrange
+    const expected = 'tails';
+    const number = .5;
+
+    //Act
+    const result = getHornsOrButts(number);
+
+    //Assert
+    assert.equal(result, expected);
+
 });
