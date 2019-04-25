@@ -13,7 +13,7 @@ button {
 }
 
 label {
-    font-size: 2em;
+    font-size: 1.3em;
 }
 
 img {
@@ -25,7 +25,6 @@ span {
     font-weight: bolder;
     font-size: 1.3em;
     color: #52b0be;
-    text-shadow: 2px 0px;
 }
 
 #message {
