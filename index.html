@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unicoin Toss</title>
+    <link rel="stylesheet" href="./src/main.css">
+</head>
+<body>
+    <header>
+        <h1>Unicoin Toss</h1>
+    </header>
+    
+    
+    <p>
+        <img id= "uni-image" src="./assets/unihead.jpg" alt="cute unicorn head">
+    </p>
+
+    <p>
+        <label>
+            <input id="heads-choice" type="radio" name="coin-side" checked> Unihead
+        </label>
+    </p>
+
+    <p>
+        <label>
+                <input type="radio" name="coin-side"> Unibutt
+        </label>
+    </p>
+
+    <p id="message">
+        Welcome to the END TIMES! Push the button to flip the Unicoin!
+    </p>
+
+   <p>
+    <span id="wins">wins: 0</span>
+
+    <span id="losses">losses: 0</span>
+    </p>
+
+    <button id="unicoin-button">Flip Unicoin</button>
+    <script type="module" src="./src/app.js"></script>
+</body>
+</html>
